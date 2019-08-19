@@ -19,26 +19,17 @@ int main()
 	     0, 0, 0, 1;
 	cout << "M = " << endl << M << endl;
 
-	int currVal = 0, val = 0;
-	if ( cin >> currVal )
-	{
-		int cnt = 1;
-		while ( cin >> val )
-		{
-			if ( val == currVal ) ++cnt;
-			else 
-			{
-				cout << currVal << " occurs "
-				     << cnt << " times" << endl;
-				currVal = val;
-				cnt = 1;
-			}
-		}
-		cout << currVal << " occers "
-		     << cnt << " times" << endl;
-	}
-
-
+	int i = 42;
+	cout << "i = " << i << endl;
+	int *p = &i;
+	int &r = i;
+	cout << "*p = i = " << *p << endl;
+	cout << "p = &i = " << p << endl;
+	cout << "&i = " << &i << endl;
+	cout << "r = i = " << r << endl;
+	cout << "&r = p = &i = " << &r << endl;
+	*p = *p * *p;
+	cout << "*p * *p = " << *p << endl;
 
 
 
