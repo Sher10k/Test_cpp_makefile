@@ -10,17 +10,21 @@ HEAD_DIR	= Header
 INCPATH		= -I/usr/include/eigen3 \
 		  -I/usr/local/include/opencv4 \
 		  -I../$(HEAD_DIR) \
-		  -I../
+		  -I../zcm_types/service/cpp_types \
+		  -I ../
 
 SOURCES 	= ../main.cpp \
-		  ../$(SRC_DIR)/myclass.cpp
+		  ../$(SRC_DIR)/myclass.cpp \
+		  ../$(SRC_DIR)/videoParser.cpp
 
 HEADERS		= ../$(HEAD_DIR)/myclass.h \
 		  ../
 
 #OBJECTS 	= $(SOURCES:.cpp=.o) 
 OBJECTS		= main.o \
-		  myclass.o
+		  myclass.o \
+		  videoParser.o
+
 EXECUTABLE	= hello
 
 
