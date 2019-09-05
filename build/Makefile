@@ -34,7 +34,7 @@ hello: $(OBJECTS)
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
 $(OBJECTS):
-	$(CC) $(CFLAGS) $(SOURCES) $(INCPATH)
+	$(CC) $(CFLAGS) $(SOURCES) $(INCPATH) -link_pkgconfig
 
 
 

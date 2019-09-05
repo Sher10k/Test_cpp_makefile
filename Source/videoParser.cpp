@@ -5,9 +5,9 @@
 #include <zcm/zcm-cpp.hpp>
 #include "zcm_types/camera_basler/cpp_types/ZcmCameraBaslerJpegFrame.hpp"
 
-#include <opencv2/core/core.hpp>        // Basic OpenCV structures (cv::Mat)
-#include <opencv2/highgui/highgui.hpp>  // Video write
-#include <opencv2/imgcodecs.hpp>
+#include <opencv2/core.hpp>        // Basic OpenCV structures (cv::Mat)
+#include <opencv2/highgui.hpp>  // Video write
+//#include <opencv2/imgcodecs.hpp>
 
 
 class VideoParser {
